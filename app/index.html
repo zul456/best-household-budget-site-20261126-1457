@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DompetKeluarga — Anggaran Rumah Tangga Keluarga Prasetyo</title>
+<meta name="description" content="DompetKeluarga: catat pemasukan dan pengeluaran, atur anggaran bulanan tiap kategori, dan kejar target tabungan keluarga — semua berjalan offline di peramban.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="wrap topbar-inner">
+    <a class="brand" href="#/">
+      <span class="brand-mark" aria-hidden="true">Rp</span>
+      <span class="brand-text"><strong>DompetKeluarga</strong><small>Anggaran rumah tangga, tanpa ribet</small></span>
+    </a>
+    <nav class="mainnav" aria-label="Navigasi utama">
+      <a href="#/" data-nav="dashboard">Dasbor</a>
+      <a href="#/transaksi" data-nav="transaksi">Transaksi</a>
+      <a href="#/anggaran" data-nav="anggaran">Anggaran</a>
+      <a href="#/tabungan" data-nav="tabungan">Tabungan</a>
+      <a href="#/laporan" data-nav="laporan">Laporan</a>
+    </nav>
+    <div class="month-picker">
+      <label for="monthSelect">Bulan</label>
+      <select id="monthSelect" aria-label="Pilih bulan"></select>
+    </div>
+  </div>
+</header>
+
+<main class="wrap" id="app" aria-live="polite"></main>
+
+<footer class="wrap site-footer">
+  <p><strong>DompetKeluarga</strong> — contoh keluarga: Keluarga Prasetyo, Jakarta. Semua angka dalam Rupiah dan tersimpan di peramban Anda sendiri; tidak ada data yang dikirim ke mana pun. Situs ini berjalan sepenuhnya offline.</p>
+  <p><a href="#/">Dasbor</a> · <a href="#/transaksi">Transaksi</a> · <a href="#/anggaran">Anggaran</a> · <a href="#/tabungan">Tabungan</a> · <a href="#/laporan">Laporan</a></p>
+</footer>
+
+<script type="module" src="app.js"></script>
+</body>
+</html>
